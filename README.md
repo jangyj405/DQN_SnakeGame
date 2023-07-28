@@ -42,7 +42,12 @@ python test.py
 cd DQN_SnakeGame
 python main.py
 ```
-
+### training model from scratch
+```python
+# main.py
+# change the parameter 'load_model' to False to start training from scratch
+brain = Brain(input_shape=input_shape, n_output=4, load_model=False, epsilon = 0.9)
+```
 ## Trouble Shooting
 ```shell
 OSError: Cannot parse keras metadata at path brain\keras_metadata.pb: Received error: Error parsing message
